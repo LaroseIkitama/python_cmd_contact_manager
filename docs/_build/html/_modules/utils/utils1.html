@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>utils.utils1 &mdash; Contact Manager 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" src="../../_static/jquery.js"></script>
+        <script integrity="sha384-lSZeSIVKp9myfKbDQ3GkN/KHjUc+mzg17VKDN4Y2kUeBSJioB9QSM639vM9fuY//" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Contact Manager
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">src</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Contact Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">utils.utils1</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for utils.utils1</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;This module contains useful functions of checking values,manipulating and display strings, etc...</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<div class="viewcode-block" id="indent"><a class="viewcode-back" href="../../utils.html#utils.utils1.indent">[docs]</a><span class="k">def</span> <span class="nf">indent</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">spaces</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function indents the given string by the specified number of spaces.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        string (str): The string to be indented.</span>
+<span class="sd">        spaces (int): The number of spaces by which the string should be indented.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The indented string.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">indentation</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="n">spaces</span>
+
+    <span class="k">return</span> <span class="n">indentation</span><span class="o">+</span><span class="n">string</span></div>
+
+
+<div class="viewcode-block" id="clear_console"><a class="viewcode-back" href="../../utils.html#utils.utils1.clear_console">[docs]</a><span class="k">def</span> <span class="nf">clear_console</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function clears the console screen.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;cls&#39;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span> <span class="k">else</span> <span class="s1">&#39;clear&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="is_numeric"><a class="viewcode-back" href="../../utils.html#utils.utils1.is_numeric">[docs]</a><span class="k">def</span> <span class="nf">is_numeric</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function checks whether the given string is numeric or not.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        value (str): The string to be checked.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if the string is numeric, False otherwise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="is_between_interval"><a class="viewcode-back" href="../../utils.html#utils.utils1.is_between_interval">[docs]</a><span class="k">def</span> <span class="nf">is_between_interval</span><span class="p">(</span><span class="n">lower_value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">higher_value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function checks whether a value is within a specified interval.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        lower_value (int): The lower bound of the interval.</span>
+<span class="sd">        value (int): The value to be checked.</span>
+<span class="sd">        higher_value (int): The upper bound of the interval.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if the value is within the interval, False otherwise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">lower_value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="n">higher_value</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="menu"><a class="viewcode-back" href="../../utils.html#utils.utils1.menu">[docs]</a><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function displays the menu options for the contact manager program.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">indent</span><span class="p">(</span><span class="s2">&quot;___________________ Contact Manager ___________________&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;1 - Add a contact</span><span class="se">\t\t\t</span><span class="s2">4 - Display a contact&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;2 - Edit a contact</span><span class="se">\t\t</span><span class="s2">5 - Show all contacts&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;3 - Delete a contact</span><span class="se">\t\t</span><span class="s2">6 - Exit&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="menu_modify_contact"><a class="viewcode-back" href="../../utils.html#utils.utils1.menu_modify_contact">[docs]</a><span class="k">def</span> <span class="nf">menu_modify_contact</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This function displays the options available when modifying a contact.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">indent</span><span class="p">(</span><span class="s2">&quot;_________________ What do you want to change? _________________&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;1 - Firstname</span><span class="se">\t\t\t</span><span class="s2">5 - Lastname&quot;</span><span class="p">,</span> <span class="mi">39</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;2 - Company</span><span class="se">\t\t\t</span><span class="s2">6 - Mobile&quot;</span><span class="p">,</span> <span class="mi">39</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;3 - Email</span><span class="se">\t\t\t</span><span class="s2">7 - Address&quot;</span><span class="p">,</span> <span class="mi">39</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">indent</span><span class="p">(</span><span class="s2">&quot;4 - Cancel</span><span class="se">\t\t\t</span><span class="s2">8 - Done&quot;</span><span class="p">,</span> <span class="mi">39</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Larose IKITAMA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

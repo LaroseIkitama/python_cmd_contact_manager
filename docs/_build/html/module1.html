@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>module1 package &mdash; Contact Manager 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" src="_static/jquery.js"></script>
+        <script integrity="sha384-lSZeSIVKp9myfKbDQ3GkN/KHjUc+mzg17VKDN4Y2kUeBSJioB9QSM639vM9fuY//" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="utils package" href="utils.html" />
+    <link rel="prev" title="main module" href="main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Contact Manager
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">module1 package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-module1.file1">module1.file1 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.add_contact"><code class="docutils literal notranslate"><span class="pre">add_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.array_contacts_is_empty"><code class="docutils literal notranslate"><span class="pre">array_contacts_is_empty()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.contact_already_exist_in_array_occurrence"><code class="docutils literal notranslate"><span class="pre">contact_already_exist_in_array_occurrence()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.delete_contact"><code class="docutils literal notranslate"><span class="pre">delete_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.display_contact"><code class="docutils literal notranslate"><span class="pre">display_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.display_occurrences"><code class="docutils literal notranslate"><span class="pre">display_occurrences()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.edit_contact"><code class="docutils literal notranslate"><span class="pre">edit_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.key_exist_in_contacts_array"><code class="docutils literal notranslate"><span class="pre">key_exist_in_contacts_array()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.loop_of_menu_edit"><code class="docutils literal notranslate"><span class="pre">loop_of_menu_edit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.show_all_contacts"><code class="docutils literal notranslate"><span class="pre">show_all_contacts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.switch"><code class="docutils literal notranslate"><span class="pre">switch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.switch_edit_contact"><code class="docutils literal notranslate"><span class="pre">switch_edit_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module1.file1.there_is_an_occurrence_in_values"><code class="docutils literal notranslate"><span class="pre">there_is_an_occurrence_in_values()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-module1">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Contact Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+      <li class="breadcrumb-item active">module1 package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/module1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module1-package">
+<h1>module1 package<a class="headerlink" href="#module1-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-module1.file1">
+<span id="module1-file1-module"></span><h2>module1.file1 module<a class="headerlink" href="#module-module1.file1" title="Permalink to this heading"></a></h2>
+<p>This module contains all the functions of handling contact data.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.add_contact">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">add_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#add_contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.add_contact" title="Permalink to this definition"></a></dt>
+<dd><p>This function prompts the user to enter contact information and stores it in a dictionary, 
+which is then added to a list of contacts.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.array_contacts_is_empty">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">array_contacts_is_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#array_contacts_is_empty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.array_contacts_is_empty" title="Permalink to this definition"></a></dt>
+<dd><p>This function checks whether the contacts array is empty.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>bool: True if the contacts array is empty, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.contact_already_exist_in_array_occurrence">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">contact_already_exist_in_array_occurrence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contact_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#contact_already_exist_in_array_occurrence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.contact_already_exist_in_array_occurrence" title="Permalink to this definition"></a></dt>
+<dd><p>This function checks whether a given contact list already exists in the occurrences_contacts array.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact_list (list): The contact list to be checked.</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: True if the contact list already exists in the occurrences_contacts array, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.delete_contact">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">delete_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#delete_contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.delete_contact" title="Permalink to this definition"></a></dt>
+<dd><p>This function implements the deletion of a contact from the contacts list.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.display_contact">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">display_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#display_contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.display_contact" title="Permalink to this definition"></a></dt>
+<dd><p>Prompts the user to enter a search string and displays any contacts
+that match the search string.</p>
+<p>If there are no contacts in the <cite>contacts</cite> list, it prints a message 
+indicating that there are no contacts recorded.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.display_occurrences">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">display_occurrences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#display_occurrences"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.display_occurrences" title="Permalink to this definition"></a></dt>
+<dd><p>This function displays the contacts that have a value containing the given search string.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>search_str (str): The string to search for.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.edit_contact">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">edit_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#edit_contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.edit_contact" title="Permalink to this definition"></a></dt>
+<dd><p>Allows the user to choose a contact from the list of contacts and edit it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.key_exist_in_contacts_array">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">key_exist_in_contacts_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#key_exist_in_contacts_array"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.key_exist_in_contacts_array" title="Permalink to this definition"></a></dt>
+<dd><p>This function checks whether a key exists in the contacts array.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>key (int): The key to be checked.</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: True if the key exists in the contacts array, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.loop_of_menu_edit">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">loop_of_menu_edit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#loop_of_menu_edit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.loop_of_menu_edit" title="Permalink to this definition"></a></dt>
+<dd><p>Is a loop that allows the user to edit a contact.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.show_all_contacts">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">show_all_contacts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#show_all_contacts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.show_all_contacts" title="Permalink to this definition"></a></dt>
+<dd><p>Displays a list of all saved contacts.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.switch">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">switch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choice</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#switch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.switch" title="Permalink to this definition"></a></dt>
+<dd><p>Takes an integer choice as input and calls other functions based on the choice provided.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>choice (int): _description_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.switch_edit_contact">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">switch_edit_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choice</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#switch_edit_contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.switch_edit_contact" title="Permalink to this definition"></a></dt>
+<dd><p>This function contains a switch statement to edit a contact’s details based on the user’s selected choice.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>choice (int): an integer value representing the user’s selected option, should be within the range of 1-8.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="module1.file1.there_is_an_occurrence_in_values">
+<span class="sig-prename descclassname"><span class="pre">module1.file1.</span></span><span class="sig-name descname"><span class="pre">there_is_an_occurrence_in_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/module1/file1.html#there_is_an_occurrence_in_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#module1.file1.there_is_an_occurrence_in_values" title="Permalink to this definition"></a></dt>
+<dd><p>This function searches for a given string in the values of the contacts array, and adds any contacts
+with a match to the occurrences_contacts array.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>search_str (str): The string to search for.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-module1">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-module1" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="main.html" class="btn btn-neutral float-left" title="main module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="utils.html" class="btn btn-neutral float-right" title="utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Larose IKITAMA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
